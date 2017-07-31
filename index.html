@@ -4,97 +4,167 @@
 	<meta charset="UTF-8">
 	<title>Mini Twitter</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 
-	<!-- Latest compiled and minified JavaScript -->
+	<!-- Main Style -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- JQuery -->
+	<script
+  	src="https://code.jquery.com/jquery-3.2.1.min.js"
+  	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  	crossorigin="anonymous"></script>
+
+  	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </head>
 <body>
-	<nav class="navbar navbar-default">
-	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="#">Brand</a>
-	    </div>
+<!-- Container Columnas-->
+	<div class="container-fluid">
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-	        <li><a href="#">Link</a></li>
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="#">Action</a></li>
-	            <li><a href="#">Another action</a></li>
-	            <li><a href="#">Something else here</a></li>
-	            <li role="separator" class="divider"></li>
-	            <li><a href="#">Separated link</a></li>
-	            <li role="separator" class="divider"></li>
-	            <li><a href="#">One more separated link</a></li>
-	          </ul>
-	        </li>
-	      </ul>
-	      <form class="navbar-form navbar-left">
-	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Search">
-	        </div>
-	        <button type="submit" class="btn btn-default">Submit</button>
-	      </form>
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">Link</a></li>
-	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-	          <ul class="dropdown-menu">
-	            <li><a href="#">Action</a></li>
-	            <li><a href="#">Another action</a></li>
-	            <li><a href="#">Something else here</a></li>
-	            <li role="separator" class="divider"></li>
-	            <li><a href="#">Separated link</a></li>
-	          </ul>
-	        </li>
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
-	<!-- Columna 1 -->
-	<div class="container">
-		<div class="row">
-			<div class="column-1 col-md-6">
-				<div class="box-escribir">
-					<img class="img-box-escribir" src="" alt="">
-					<input type="text" placeholder="¿Qué piensas?">
-					<input type="button" value="Publicar">
+	<!-- Columna 1-->
+    	<div class="col-sm-6 col-md-6">
+    	<!-- Publicación -->
+			<div class="col-sm-12 col-md-12 box-publicacion">
+				<div class="row">
+					<div class="media">
+  						<div class="media-left">
+    						<a href="#">
+      						<img class="media-object" src="img/foto-perfil-1.jpg" width="32px" alt="Foto de perfil">
+    						</a>
+  						</div>
+  						<div class="media-body">
+    						<textarea class="form-control " placeholder="¿Qué piensas?" rows="3"></textarea>
+  						</div>
+  						<div class="toolbar-publicacion">
+  							<a href="#" class="btn btn-success boton">Publicar</a>
+  						</div>
+					</div>
 				</div>
-			</div>
-		</div>	 
-		<div class="row">	
-			<div class="column-1 col-md-6">
-				<div class="box-escribir">
-					<img class="img-box-escribir" src="" alt="">
-					<input type="text" placeholder="¿Qué piensas?">
-					<input type="button" value="Publicar">
+			</div>	
+    	</div> 
+    <!-- Columna 1-->
+
+	<!-- Columna 2-->
+		<div class="col-sm-6 col-md-6">
+		<!-- Tweets -->
+			<div class="col-sm-12 col-md-12">
+				<div class="row">
+				<!-- Tweet 1 -->
+					<div class="box-tweets">
+						<div class="media">
+		  					<div class="media-left">
+		    					<a href="img/foto-perfil-2.jpg">
+		     					<img class="media-object avatar-tweets" width="48px" src="img/foto-perfil-2.jpg" alt="Foto de Juana Doe">
+		    					</a>
+		 					 </div>
+		  					<div class="media-body">
+		    					<strong>Juana Doe</strong> 
+		    					<span>@ jdoe</span>
+		    					<small>.</small>
+		    					<span>3m</span>
+		    					<br>
+		    					<p>Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores <a href="http://bit.ly/2eZd7mp">http://bit.ly/2eZd7mp	</a></p>
+		  					</div>
+		  					<div class="row text-center img-tweets">
+		  						<img src="http://lorempixel.com/output/nightlife-q-c-500-280-5.jpg" alt="Dj Animando una fiesta">
+		  					</div>
+		  					<div class="likeable">
+		  						<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+		  						<span> 0 </span>
+		  					</div>
+						</div>
+					</div>
+				<!-- Tweet 2 -->		
+					<div class="box-tweets">
+						<div class="media">
+		  					<div class="media-left">
+		    					<a href="img/foto-perfil-3.jpg">
+		     					<img class="media-object avatar-tweets" width="48px" src="img/foto-perfil-3.jpg" alt="Foto de Lalo Landa">
+		    					</a>
+		 					 </div>
+		  					<div class="media-body">
+		    					<strong>Lalo Landa</strong> 
+		    					<span>@ landa86</span>
+		    					<small>.</small>
+		    					<span>1h</span>
+		    					<br>
+		    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio odit qui architecto veritatis, labore rem tempore <a href="http://bit.ly/2tPvdd8">http://bit.ly/2tPvdd8</a></p>
+		  					</div>
+		  					<div class="row text-center img-tweets">
+		  						<img src="http://lorempixel.com/output/abstract-q-c-500-280-3.jpg" alt="Arte Abstracto">
+		  					</div>
+		  					<div class="likeable">
+		  						<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+		  						<span> 0 </span>
+		  					</div>
+						</div>
+					</div>
+				<!-- Tweet 3 -->
+					<div class="box-tweets">
+						<div class="media">
+		  					<div class="media-left">
+		    					<a href="img/foto-perfil-4.jpg">
+		     					<img class="media-object avatar-tweets" width="48px" src="img/foto-perfil-4.jpg" alt="Foto de Jorge González">
+		    					</a>
+		 					 </div>
+		  					<div class="media-body">
+		    					<strong>Jorge González</strong> 
+		    					<span>@ casaenelarbol</span>
+		    					<small>.</small>
+		    					<span>4h</span>
+		    					<br>
+		    					<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? <a href="http://bit.ly/2wcmdPX">http://bit.ly/2wcmdPX</a></p>
+		  					</div>
+		  					<div class="row text-center img-tweets">
+		  						<img src="http://lorempixel.com/output/nightlife-q-c-500-280-4.jpg" alt="Tokio de Noche">
+		  					</div>
+		  					<div class="likeable">
+		  						<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+		  						<span> 0 </span>
+		  					</div>
+						</div>
+					</div>	
+				<!-- Tweet 4 -->
+					<div class="box-tweets">
+						<div class="media">
+		  					<div class="media-left">
+		    					<a href="img/foto-perfil-5.jpg">
+		     					<img class="media-object avatar-tweets" width="48px" src="img/foto-perfil-5.jpg" alt="Foto de Elsa Ipsum">
+		    					</a>
+		 					 </div>
+		  					<div class="media-body">
+		    					<strong>Elsa Ipsum</strong> 
+		    					<span>@ loremipsum</span>
+		    					<small>.</small>
+		    					<span>5h</span>
+		    					<br>
+		    					<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus <a href="http://bit.ly/2vcG0RU">http://bit.ly/2vcG0RU</a></p>
+		  					</div>
+		  					<div class="row text-center img-tweets">
+		  						<img src="http://lorempixel.com/output/technics-q-c-500-280-4.jpg" alt="Transistores de una placa electrónica">
+		  					</div>
+		  					<div class="likeable">
+		  						<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+		  						<span> 0 </span>
+		  					</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>	
-	</div>
-	<div class="container">
-		
-			<div class="column-1">
-					
 			</div>
 		</div>
+<!-- Columna 2-->		
 	</div>
+<!-- Container Columnas-->	
+
+<!-- Javascript -->
+<script src="js/main.js"></script>		
 </body>
 </html>
