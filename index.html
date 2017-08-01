@@ -30,9 +30,9 @@
 	<div class="container-fluid">
 
 	<!-- Columna 1-->
-    	<div class="col-sm-6 col-md-6">
+    	<div  class="col-sm-6 col-md-6">
     	<!-- Publicación -->
-			<div class="col-sm-12 col-md-12 box-publicacion">
+			<div id="box-tweet" class="col-sm-12 col-md-12 box-publicacion">
 				<div class="row">
 					<div class="media">
   						<div class="media-left">
@@ -41,10 +41,10 @@
     						</a>
   						</div>
   						<div class="media-body">
-    						<textarea class="form-control " placeholder="¿Qué piensas?" rows="3"></textarea>
+    						<textarea id="text-tweet" class="form-control " placeholder="¿Qué piensas?" rows="3"></textarea>
   						</div>
   						<div class="toolbar-publicacion">
-  							<a href="#" class="btn btn-success boton">Publicar</a>
+  							<input id="boton-tweets" type="submit" value="Publicar" class="btn btn-success boton">
   						</div>
 					</div>
 				</div>
@@ -56,9 +56,9 @@
 		<div class="col-sm-6 col-md-6">
 		<!-- Tweets -->
 			<div class="col-sm-12 col-md-12">
-				<div class="row">
+				<div id="board" class="row">
 				<!-- Tweet 1 -->
-					<div class="box-tweets">
+					<div class="box-tweets note">
 						<div class="media">
 		  					<div class="media-left">
 		    					<a href="img/foto-perfil-2.jpg">
@@ -70,6 +70,7 @@
 		    					<span>@ jdoe</span>
 		    					<small>.</small>
 		    					<span>3m</span>
+		    					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 		    					<br>
 		    					<p>Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores <a href="http://bit.ly/2eZd7mp">http://bit.ly/2eZd7mp	</a></p>
 		  					</div>
@@ -95,6 +96,7 @@
 		    					<span>@ landa86</span>
 		    					<small>.</small>
 		    					<span>1h</span>
+		    					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 		    					<br>
 		    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio odit qui architecto veritatis, labore rem tempore <a href="http://bit.ly/2tPvdd8">http://bit.ly/2tPvdd8</a></p>
 		  					</div>
@@ -120,6 +122,7 @@
 		    					<span>@ casaenelarbol</span>
 		    					<small>.</small>
 		    					<span>4h</span>
+		    					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 		    					<br>
 		    					<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? <a href="http://bit.ly/2wcmdPX">http://bit.ly/2wcmdPX</a></p>
 		  					</div>
@@ -145,6 +148,7 @@
 		    					<span>@ loremipsum</span>
 		    					<small>.</small>
 		    					<span>5h</span>
+		    					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 		    					<br>
 		    					<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus <a href="http://bit.ly/2vcG0RU">http://bit.ly/2vcG0RU</a></p>
 		  					</div>
