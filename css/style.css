@@ -48,9 +48,17 @@ body {
 	border-radius: 5px;
 }
 
+.boton-eliminar {
+	float: right;
+	margin-right: 10px;
+}
+
 .likeable{
 	text-align: left;
 	margin: 10px 0 0 80px;
 	font-size: 16px;
 	color: #657786;
 }
+ .contador {
+ 	padding: 5px;
+ }
